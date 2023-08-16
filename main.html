@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY FIRST WEBSITE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+  var im=[
+"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/1200px-Hopetoun_falls.jpg",
+"https://i.ytimg.com/vi/6NVCKeiqvtY/maxresdefault.jpg",
+"https://petworldglobal.com/wp-content/uploads/2019/12/maxresdefault-1.jpg",
+"https://i.ytimg.com/vi/7WCbIjqjHM4/maxresdefault.jpg",
+"https://wallpapercave.com/wp/zRkeR21.jpg",
+"http://thewowstyle.com/wp-content/uploads/2015/07/Natural-World-Wallpaper-HD-.jpg",
+"https://i.ytimg.com/vi/6lt2JfJdGSY/maxresdefault.jpg",
+"https://beautifulcoolwallpapers.files.wordpress.com/2011/07/naturewallpaper.jpg",
+"http://2.bp.blogspot.com/-ya6E_4I_pkY/UA-KRIKu3KI/AAAAAAAAAJk/AjEDjAK4IhM/s1600/nature+wallpaper+1280-1.jpg",
+"https://wallpapercave.com/wp/TVG9ATD.jpg"
+  ];
+  var i=0;function slide()
+  {
+  document.getElementById("imag").src=im[i];
+  if(i<(im.length-1))
+  i++;
+  else i=0;
+  }
+  setInterval(slide,2000);
+  </script>
+</head>
+<body>
+<header class="site-header">
+
+  
+	<div class="menu">
+	<ul>
+	  <li><a href="main.html">HOME</a></li>
+	  <li><a href="poetry.html">POETRY</a></li>
+	  <li><a href="image.html">IMAGES</a></li>
+	  <li><a href="video.html">VIDEOS</a></li>
+	  <li><a href="more.html">MORE</a></li>
+	  <li><a href="form.html">REGISTRATION</a></li>
+	  
+	</ul>
+	</div>
+	
+  
+  <div class="text">
+  <marquee>
+  <span class="quratiya"><sup>NEW</sup></span>
+  <span class="tex">TO BE MEMBER OF THIS BEAUTIFUL WORLD REGISTER NOW</span>
+  <span class="quratiya"><sup>NEW</sup></span>
+  <span class ="tex">NOTIFICATION REGARDING ANNUAL NATURE DAY</span>
+  <span class="quratiya"><sup>NEW</sup></span>
+  <span class="tex">NOTIFICATION REGARDING HIRING OF PHOTOGRAPHERS</span>
+  <span class="quratiya"><sup>NEW</sup></span>
+  <span class="tex">GOVERNOMENT RUGULATIONS REGARDING RISTICTED ZONES</span>
+  <span class="quratiya"><sup>NEW</sup></span>
+  <span class="tex">NOTIFICATION REGARDING NEW POSTS</span>
+  </marquee>
+  </div>
+  <section>
+  <div class="rightside">
+  <h1>MY FIRST WEBSITE</h1>
+  <p>IN THIS WEBSITE I AM GOING TO SHARE SOMETHING</br> ABOUT NATURE THAT MAKES ME ALWAYS HAPPY </br>HOPE YOU ALSO ENJOY THIS WEBSITE</p>
+  <button onclick="window.location.href ='nature.html'">THE NATURE</a></button>
+  <p style="color:black;font-size:20px;font-weight:bold;text-decoration:underline;"></br></br>NAME = "QURAT JAVEED" </BR>ROLL NO. = "CSE-18-LE-66"</p>
+  </div>
+  <div class="leftside">
+   <img id="imag" width="95%" height="450px">
+  </div>
+  
+  </section>
+  
+</header>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+  </head>
+  <body class="bo-dy">
+   <nav>
+	<div class="menu">
+	<ul>
+	  <li><a href="main.html">HOME</a></li>
+	  <li><a href="nature.html">THE NATURE</a></li>
+	  <li><a href="poetry.html">POETRY</a></li>
+	  <li><a href="image.html">IMAGES</a></li>
+	  <li><a href="video.html">VIDEOS</a></li>
+	  <li><a href="more.html">MORE</a></li>
+	  
+	  
+	</ul>
+	</div>  
+  </nav><hr><hr>
+	</br>
+   <h2 style="text-align:center;text-decoration:underline;text-shadow:2px 2px 1px black;font-size:35px;">REGISTRATION FORM <P>INORDER TO BE THE MEMBER OF NATURE DEPARTMENT</P></h2>
+			 </br></br>
+			
+			 
+  <form action="example.php" method="post" onsubmit="return validation()">
+    <table align="center">
+	<th>YOUR NAME</th>
+	<td><input type="text" placeholder="Indar" oninvalid="alert('plz enter 5 to 20 only alphabets');" pattern="[A-Za-z/s].{4,20}"id="student"value=""/required></td>
+	</tr>
+	<tr>
+	<th>FATHER'S NAME</th>
+	<td><input type="text" placeholder="Chahal Singh" oninvalid="alert('plz enter 5 to 20 only alphabets');" pattern="[A-Za-z/s].{4,20}" id="father" value="" onchange=" return fun2(event)"/required></td>
+	</tr>
+	<tr>
+	<th>ID NO.</th>
+	<td><input type="text" placeholder="123456"   id="eno" oninvalid="alert('plz enter correct enrollment no.');" pattern="{10}"value=""/required></td>
+	</tr>
+	<tr>
+	<th>EMAIL ID</th>
+	<td><input type="email" placeholder="example@gmail.com" id="email" value=""/required></td>
+	</tr>
+	<tr>
+	<th>CONTACT NO.</th>
+	<td><input type="tel"  placeholder="9697xxxxxx"oninvalid="alert('plz enter correct phone no.');"  pattern="[0-9]{10}" id="contact" value=""/required></td>
+	</tr>
+	<tr>
+	<th>DATE OF BIRTH</th>
+	<td><input type="date" name="dob"/required></td>
+	</tr>
+	<tr>
+	<th>GENDER</th>
+	<td><input type="radio" id="m" name="gender"/>MALE
+	<input type="radio"  id="f"name="gender"/>FEMALE
+	</td>
+	</tr>
+	<tr>
+	<th>DEPARTMENT</th>
+	<td><select required>
+	<option></option>
+	<option>FOREST</option>
+	<option>FISHERIES</option>
+	<option>WILDLIFE</option>
+	<option>WATER</option>
+	<option>HILL</option>
+	<option>PETROLEUM</option>
+	</select></td>
+	</tr>
+	<tr>
+	<th>DISTRICT</th>
+	<td><select required>
+	<option></option>
+	<option>SRINAGAR</option>
+	<option>ANANTNAG</option>
+	<option>BARAMULLA</option>
+	<option>POONCH</option>
+	<option>UDHAMPUR</option>
+	<option>MIRPUR</option>
+	<option>LEH</option>
+	<option>KARGIL</option>
+	</select></td>
+	</tr>
+	<tr>
+	<th>LOCALITY</th>
+	<td><input type="text" id="locality" placeholder="Near Something" pattern=".{5,30}"/required></td>
+	</tr>
+	<tr>
+	<th>CREATE USERNAME</th>
+	<td><input type="text" id="user" placeholder="6 to 20 character" pattern=".{5,20}" value=""/required></td>
+	</tr>
+	<tr>
+	<th>CREATE PASSWORD</th>
+	<td><input type="password" id="password" oninvalid="alert('plz enter strong password with atleast 1 no.,1 uppercase,1 lowercase and total no. of character should be 5-20');" pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z]).{5,20}"  placeholder="QWqw12" value="" onchange="return fun3(event)"/required></td>
+	</tr><tr></tr><tr></tr></br>
+	<tr>
+	<td colspan="2"align="center"><input type="submit" value="REGISTER" style="color:black;"/> 
+	<input type="reset"value="RESET" style="color:black;"/></td>
+	</tr>
+    </table>
+</form><br/>
+  </body>
+</html>
